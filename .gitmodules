@@ -1,0 +1,6 @@
+[submodule "Drivers/stm32wbxx_hal_driver"]
+	path = Drivers/HAL_Driver
+	url = https://github.com/STMicroelectronics/stm32wbxx_hal_driver.git
+[submodule "Drivers/cmsis_device_wb"]
+	path = Drivers/CMSIS
+	url = https://github.com/STMicroelectronics/cmsis_device_wb.git
