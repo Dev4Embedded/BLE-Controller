@@ -43,8 +43,7 @@ private:
 public:
 	per_clock(uint32_t selector, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ,
 	          uint32_t PLLR, uint32_t PLLSAI1ClockOut, uint32_t Usart1ClockSelection,
-	          uint32_t UsbClockSelection, uint32_t SmpsClockSelection,
-	          uint32_t SmpsDivSelection);
+	          uint32_t SmpsClockSelection, uint32_t SmpsDivSelection);
 	~per_clock();
 	int Init();
 };

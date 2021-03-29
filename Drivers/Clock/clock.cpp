@@ -61,17 +61,17 @@ int sys_clock::Init() {
 }
 
 per_clock::per_clock(uint32_t selector, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ,
-        uint32_t PLLR, uint32_t PLLSAI1ClockOut, uint32_t Usart1ClockSelection,
-        uint32_t UsbClockSelection, uint32_t SmpsClockSelection,
-        uint32_t SmpsDivSelection) {
+                     uint32_t PLLR, uint32_t PLLSAI1ClockOut, uint32_t Usart1ClockSelection,
+                     uint32_t SmpsClockSelection, uint32_t SmpsDivSelection) {
 	clockInit.PeriphClockSelection = selector;
 	clockInit.PLLSAI1.PLLN = PLLN;
-	clockInit.PLLSAI1.PLLP = PLLQ;
-	clockInit.PLLSAI1.PLLQ = PLLR;
-	clockInit.PLLSAI1.PLLR = PLLQ;
+	clockInit.PLLSAI1.PLLP = PLLP;
+	clockInit.PLLSAI1.PLLQ = PLLQ;
+	clockInit.PLLSAI1.PLLR = PLLR;
 	clockInit.PLLSAI1.PLLSAI1ClockOut = PLLSAI1ClockOut;
 	clockInit.Usart1ClockSelection = Usart1ClockSelection;
 	clockInit.SmpsClockSelection = SmpsClockSelection;
+	clockInit.SmpsDivSelection = SmpsDivSelection;
 }
 
 int per_clock::Init() {

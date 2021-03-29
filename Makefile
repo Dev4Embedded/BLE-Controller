@@ -54,6 +54,7 @@ LL_DRIVERS_INC=${LL_DRIVERS}/Inc
 
 DRIVER_CLOCK=${DRIVERS}/Clock
 DRIVER_GPIO=${DRIVERS}/GPIO
+DRIVER_UART=${DRIVERS}/UART
 
 LINKER_SCRIPT=-T "STM32WB55RGVX_FLASH.ld"
 
@@ -74,10 +75,12 @@ INCLUDES=-I ${LL_DRIVERS_INC} \
          -I ${SYSTEM_INC} \
          -I ${DRIVER_CLOCK} \
          -I ${DRIVER_GPIO} \
+         -I ${DRIVER_UART} \
 
 CPP_SOURCES= ${SYSTEM_SRC}/main.cpp \
              ${DRIVER_GPIO}/gpio.cpp \
              ${DRIVER_CLOCK}/clock.cpp \
+             ${DRIVER_UART}/uart.cpp \
 
 C_SOURCES=${SYSTEM_SRC}/system_stm32wbxx.c \
           ${SYSTEM_SRC}/syscalls.c \
