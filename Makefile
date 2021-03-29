@@ -49,6 +49,8 @@ SYSTEM_INC=${SYSTEM}/Inc
 CMSIS_INC=${CMSIS}/Include
 CMSIS_ST_WB_INC=${CMSIS_ST_WB}/Include
 
+CORTEX_M4=${DRIVERS}/Cortex-M4
+
 LL_DRIVERS_SRC=${LL_DRIVERS}/Src
 LL_DRIVERS_INC=${LL_DRIVERS}/Inc
 
@@ -72,6 +74,7 @@ LINKER_FLAGS += -mcpu=cortex-m4 \
 INCLUDES=-I ${LL_DRIVERS_INC} \
          -I ${CMSIS_INC} \
          -I ${CMSIS_ST_WB_INC} \
+         -I ${CORTEX_M4} \
          -I ${SYSTEM_INC} \
          -I ${DRIVER_CLOCK} \
          -I ${DRIVER_GPIO} \
