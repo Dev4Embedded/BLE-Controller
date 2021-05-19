@@ -107,6 +107,8 @@ C_SOURCES=${SYSTEM_SRC}/system_stm32wbxx.c \
           ${LL_DRIVERS_SRC}/stm32wbxx_hal_rcc_ex.c \
           ${LL_DRIVERS_SRC}/stm32wbxx_hal_tim.c \
           ${LL_DRIVERS_SRC}/stm32wbxx_hal_tim_ex.c \
+          ${LL_DRIVERS_SRC}/stm32wbxx_hal_uart.c \
+          ${LL_DRIVERS_SRC}/stm32wbxx_hal_uart_ex.c \
 
 ASM_SOURCES=${SYSTEM_SRC}/startup_stm32wb55rgvx.s
 

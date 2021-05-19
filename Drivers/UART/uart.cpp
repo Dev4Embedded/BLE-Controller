@@ -8,21 +8,6 @@
 uart::uart(USART_TypeDef *inst, uint32_t baudrate, uint32_t wordlen,
 	       uint32_t stopbits, uint32_t parity, int16_t mode, uint32_t flowCtrl,
 	       bool OneBitSampling, uint32_t clockPrescaler) {
-//	main.Instance = inst;
-//	init.BaudRate = baudrate;
-//	init.WordLength = wordlen;
-//	init.StopBits = stopbits;
-//	init.Parity = parity;
-//	init.Mode = mode;
-//	init.HwFlowCtl = flowCtrl;
-//	if (OneBitSampling)
-//		init.OverSampling = UART_OVERSAMPLING_16;
-//	init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
-//	init.ClockPrescaler = clockPrescaler;
-
-//	main.Init = init;
-//	main.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
-
 	main.Instance = USART1;
 	main.Init.BaudRate = 115200;
 	main.Init.WordLength = UART_WORDLENGTH_8B;
